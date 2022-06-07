@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html>
-<body>
-	<p style="text-align: center;"> &nbsp; </p>
-	<h1> Welcome to My Website! </h1> 
-	<link rel="stylesheet href=index.css">
-	<p style="text-align: left;">
-		I wonder what I'll do with this. I'll learn some more HTML first, and then we'll see!
-	</p>
-	<button>test-button</button>
-</body>
+	<head>
+		<title>piano-miles</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<h1 class="title"> Ray tracing (graphics) </h1> 
+
+		<div class="flex" style="border: 1px solid black">
+			<div class="inline-block text-left" style="border: 1px solid black">
+				<p class="text">
+					In 3D computer graphics, ray tracing is a technique for modeling light transport for use in a wide variety of rendering algorithms for generating digital images.
+				</p>
+
+				<p class="text">
+					On a spectrum of computational cost and visual fidelity, ray tracing-based rendering techniques from ray casting, recursive ray tracing, distribution ray tracing, photon mapping to path tracing are generally slower and higher fidelity than scanline rendering methods.[1] Thus, ray tracing was first deployed in applications where taking a relatively long time to render could be tolerated, such as in still computer-generated images, and film and television visual effects (VFX), but was less suited to real-time applications such as video games, where speed is critical in rendering each frame.<a href="https://google.com">[2]</a>
+				</p>
+
+				<p class="text">
+					Since 2018, however, hardware acceleration for real-time ray tracing has become standard on new commercial graphics cards, and graphics APIs have followed suit, allowing developers to use hybrid ray tracing and rasterization-based rendering[3][4] in games and other real-time applications with a lesser hit to frame render times.
+				</p>
+
+				<p class="text">
+					Ray tracing is capable of simulating a variety of optical effects,[5] such as reflection, refraction, soft shadows, scattering, depth of field, motion blur, caustics, ambient occlusion and dispersion phenomena (such as chromatic aberration). It can also be used to trace the path of sound waves in a similar fashion to light waves, making it a viable option for more immersive sound design in video games by rendering realistic reverberation and echoes.[6] In fact, any physical wave or particle phenomenon with approximately linear motion can be simulated with ray tracing.
+				</p>
+
+				<p class="text">
+					Ray tracing-based rendering techniques that involve sampling light over a domain generate image noise artifacts that can be addressed by tracing a very large number of rays or using denoising techniques.
+				</p>
+			</div>
+				<div class="center">
+					<div class="block">
+						<img class="small-image" src="imgs/sphere.png" style="border: 1px solid black">
+					</div>
+					<div class="block">
+						<p>A visual example of raytracing.</p>
+					</div>
+				</div>
+		</div>
+
+		<div class="center" style="border: 1px solid black">
+			<button class="subscribe-button"> SUBSCRIBE </button>
+			<button class="subscribe-button"> SUBSCRIBE </button>
+			<button class="subscribe-button"> SUBSCRIBE </button>
+		</div>
+	</body>
 </html>
