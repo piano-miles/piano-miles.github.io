@@ -1,44 +1,40 @@
-/* Body */
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    background-color: rgb(80,80,80);
+    background-color: #505050
 }
 
-/* Container */
 .container {
     width: 90%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
-/* Header */
 header {
     width: 100%;
     height: 8%;
-    border-bottom: 1px solid #353635;
+    border-bottom: 1px solid #353635
 }
 
 .logo {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+    color: #000;
+    font-weight: 700;
     margin-left: auto;
     letter-spacing: 4px;
     margin-right: auto;
     text-align: center;
     padding-top: 15px;
     line-height: 2em;
-    font-size: 22px;
+    font-size: 22px
 }
 
 .hero_header {
-    color: rgb(0, 0, 0);
+    color: #000;
     text-align: center;
     margin: 0;
-    letter-spacing: 4px;
+    letter-spacing: 4px
 }
 
-/* About Section */
 .text_column {
     width: 90%;
     text-align: left;
@@ -47,19 +43,17 @@ header {
     float: left;
     padding-left: 20px;
     padding-right: 20px;
-    color: #A3A3A3;
+    color: #A3A3A3
 }
 
 .gallery {
     clear: both;
     display: inline-block;
     width: 100%;
-    /* [disabled]min-width: 400px;
-*/
     padding-bottom: 35px;
-    padding-top: 0px;
+    padding-top: 0;
     margin-top: -5px;
-    margin-bottom: 0px;
+    margin-bottom: 0
 }
 
 .thumbnail {
@@ -72,7 +66,7 @@ header {
     margin-right: 1%;
     border-radius: 3px;
     padding-top: 20px;
-    border-bottom: 4px solid rgb(0, 0, 0);
+    border-bottom: 4px solid #000
 }
 
 .gallery .thumbnail h4 {
@@ -81,46 +75,37 @@ header {
     color: rgb;
     text-align: left;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px
 }
 
 .gallery .thumbnail p {
     margin: 0;
     color: #B3B3B3;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
-/* More info */
 .intro {
     padding-bottom: 35px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline-block
 }
 
 .column {
     width: 50%;
     text-align: center;
     padding-top: 30px;
-    float: left;
+    float: left
 }
 
 .intro .column h3 {
-    color: rgb(255, 255, 255);
-    text-align: center;
+    color: #fff;
+    text-align: center
 }
 
 .intro .column p {
-    color: rgb(255, 255, 255);
-}
-
-.cards {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    max-height: 200px;
-    opacity: 0.8;
-}
-
-.intro .column p {
+    color: #fff;
     padding-left: 30px;
     padding-right: 30px;
     text-align: justify;
@@ -129,181 +114,211 @@ header {
     margin-left: 20px;
     margin-right: 20px;
     width: 80%;
-    margin-top: 4%;
+    margin-top: 4%
 }
 
-.button {
-    width: 200px;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 0px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border: 3px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    transition: all 0.3s linear;
+.cards {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 200px;
+    opacity: .8
 }
 
-.button:hover {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.copyright {
+.container .footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 2px;
     border-top-width: 2px;
-}
-
-footer {
-    padding-top: 60px;
-    padding-bottom: 60PX;
-}
-
-.intro {
-    display: inline-block;
+    background-color: #202327;
+    border-radius: 16px
 }
 
 .profile {
-    width: 50%;
+    width: 50%
 }
 
 .gallery .thumbnail .tag {
     color: #5D5E5D;
-    padding-bottom: 4px;
-    padding-top: 4px;
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 4px 20px
 }
 
-/* Mobile */
 @media (max-width: 320px) {
     .logo {
         width: 100%;
         text-align: center;
-        margin-top: 13px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
+        margin: 13px 0 0
     }
 
     .text_column {
         width: 100%;
         text-align: justify;
         padding: 0;
+        padding-left: 20px
     }
 
     .intro .column p {
         width: 80%;
-        margin-left: 0px;
-    }
-
-    .text_column {
-        padding-left: 20px;
+        margin-left: 0
     }
 
     .thumbnail {
-        width: 100%;
+        width: 100%
     }
 
     .column {
         width: 100%;
-        margin-top: 0px;
+        margin-top: 0
     }
 
     .hero_header {
         padding-left: 10px;
         padding-right: 10px;
         line-height: 22px;
-        text-align: center;
+        text-align: center
     }
 }
 
-/* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {
     .logo {
         width: 100%;
         text-align: center;
-        margin-top: 13px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
+        margin: 13px 0 0
     }
 
     .text_column {
         width: 100%;
         text-align: left;
         padding: 0;
-    }
-
-    .thumbnail {
-        width: 100%;
-    }
-
-    .column {
-        width: 100%;
-        margin-top: 0px;
-    }
-
-    .thumbnail {
-        width: 100%;
-    }
-
-    .text_column {
         padding-left: 20px;
         padding-right: 20px;
-        width: 90%;
+        width: 90%
+    }
+
+    .thumbnail {
+        width: 100%;
+        width: 100%
     }
 
     .column {
         width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0
     }
 
     .profile {
-        width: 100%;
+        width: 100%
     }
 
     .intro .column p {
         width: 90%;
         text-align: center;
-        padding-left: 0px;
+        padding-left: 0
     }
 }
 
-/* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
     .text_column {
         width: 100%;
+        width: 90%;
+        margin: 0;
+        padding: 20px
     }
 
     .thumbnail {
-        width: 48%;
-    }
-
-    .text_column {
-        width: 90%;
-        margin: 0;
-        padding: 20px;
+        width: 48%
     }
 
     .intro .column p {
-        width: 80%;
+        width: 80%
     }
+}
+
+.container header {
+    background-color: #f3e3d7;
+    border-radius: 16px
+}
+
+.container .intro {
+    background-color: #202327;
+    padding-bottom: 65px;
+    padding-top: 35px;
+    border-radius: 16px
+}
+
+#contact {
+    background-color: #202327;
+    border-radius: 16px
+}
+
+.container>div {
+    background-color: #f3e3d7 !important;
+    padding-bottom: 35px
+}
+
+.container div .thumbnail {
+    background-color: #afafaf;
+    background-image: linear-gradient(to right, #405167 0%, #353559 100%);
+    background-size: auto;
+    color: #fff;
+    border-bottom-color: #640c68;
+    box-shadow: 0 0 10px 0 #a8a8a8;
+    border-radius: 24px
+}
+
+.container div .tag {
+    color: #e2e2e2 !important
+}
+
+.container .header h1 {
+    letter-spacing: 0;
+    word-spacing: 3px;
+    font-size: 25px
+}
+
+.intro h3 {
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px
+}
+
+.intro p {
+    word-spacing: 4px;
+    text-align: justify;
+    font-weight: 400 !important
+}
+
+.container .intro .column {
+    padding-bottom: 5px;
+    padding-top: 50px
+}
+
+.container a img {
+    box-shadow: none
+}
+
+#contact p,
+#contact .button,
+.container div .text_column {
+    color: #fff
+}
+
+@media (min-width:321px) {
+    .container .intro .column {
+        margin-top: auto
+    }
+}
+
+.gallery-section {
+    border-radius: 16px;
+    margin-top: 4px;
+    margin-bottom: 12px
 }
