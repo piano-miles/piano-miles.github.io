@@ -80,7 +80,6 @@ header {
 .gallery .thumbnail h4 {
     margin-top: 5px;
     margin-bottom: 5px;
-    color: rgb
 }
 
 .gallery .thumbnail p {
@@ -241,14 +240,15 @@ header {
 .container header {
     background-color: #f3e3d7;
     border-radius: 16px;
-    background-color: rgba(255, 245, 239, .78);
-    transform: translatex(0) translatey(0)
+    background-color: rgba(253, 242, 236, .87);
+    margin-bottom: 16px;
+    border-width: 4px;
+    border-color: #530d0d
 }
 
 .container .intro {
     padding-bottom: 65px;
-    padding-top: 35px;
-    background-color: rgba(12, 12, 54, .66)
+    padding-top: 35px
 }
 
 #contact,
@@ -278,15 +278,7 @@ header {
 
 .container .header h1 {
     letter-spacing: 0;
-    word-spacing: 3px;
-    box-shadow: none;
-    font-size: 30px
-}
-
-.container .header h1,
-.intro h3,
-.intro p {
-    text-shadow: rgba(0, 0, 0, .3)0 1px 1px
+    word-spacing: 3px
 }
 
 .intro h3 {
@@ -294,6 +286,12 @@ header {
     letter-spacing: 2px;
     word-spacing: 2px;
     font-size: 30px
+}
+
+.container .header h1,
+.intro h3,
+.intro p {
+    text-shadow: rgba(0, 0, 0, .3)0 1px 1px
 }
 
 .intro p {
@@ -331,26 +329,52 @@ header {
     margin-bottom: 12px
 }
 
-.container,
-.container .gallery-section {
-    transform: translatex(0) translatey(0)
-}
-
-.container .gallery-section {
-    background-color: rgba(255, 201, 168, .57) !important;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px
-}
-
 .gallery-section div .thumbnail {
     box-shadow: 0 0 10px 0#514f4c;
-    text-shadow: rgba(0, 0, 0, .3)0 1px 1px
+    text-shadow: rgba(0, 0, 0, .3)0 1px 1px;
+    border-radius: 16px
 }
 
 .container footer {
     background-color: rgba(8, 8, 32, .74) !important;
     text-shadow: #fff 0 1px 1px, #000 0-1px 1px;
     padding-top: 30px !important;
-    line-height: 11px
+    line-height: 11px;
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important
+}
+
+.container .gallery-section,
+.container .intro,
+.container header {
+    border-radius: 30px;
+}
+
+.container .gallery-section,
+.container .intro {
+    border-style: solid
+}
+
+.container .intro {
+    background-color: rgba(26, 26, 85, .6);
+    margin-bottom: 16px;
+    border-color: #000;
+    backdrop-filter: blur(8px) brightness(1.25) contrast(.5)
+}
+
+.container .gallery-section {
+    background-color: rgba(249, 127, 56, .33) !important;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 22px;
+    border-color: #353535;
+    backdrop-filter: blur(8px) brightness(1.3) contrast(.8) grayscale(.7)
+}
+
+.container .header h1 {
+    box-shadow: none;
+    font-size: 30px
 }
