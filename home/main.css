@@ -139,7 +139,7 @@ header {
     letter-spacing: 2px;
     border-top-width: 2px;
     background-color: #202327;
-    border-radius: 16px
+    border-radius: 6px
 }
 
 .profile {
@@ -240,7 +240,7 @@ header {
 
 .container header {
     background-color: #f3e3d7;
-    border-radius: 16px;
+    border-radius: 6px;
     background-color: rgba(255, 245, 239, .78);
     transform: translatex(0) translatey(0)
 }
@@ -254,7 +254,7 @@ header {
 #contact,
 .container .intro {
     background-color: #202327;
-    border-radius: 16px
+    border-radius: 6px
 }
 
 .container>div {
@@ -269,7 +269,7 @@ header {
     color: #fff;
     border-bottom-color: #640c68;
     box-shadow: 0 0 10px 0#a8a8a8;
-    border-radius: 24px
+    border-radius: 4px
 }
 
 .container div .tag {
@@ -326,9 +326,9 @@ header {
 }
 
 .gallery-section {
-    border-radius: 16px;
+    border-radius: 6px;
     margin-top: 4px;
-    margin-bottom: 12px
+    margin-bottom: 4px
 }
 
 .container,
