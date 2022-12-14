@@ -1,6 +1,6 @@
-.movie {
+Minified CSS Source map Restructure Beautify .movie {
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 body {
@@ -11,12 +11,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: min(1vw, 1.778vh);
+    font-size: min(1vw, 1.778vh)
 }
 
 div.viewport {
     width: 100em;
     height: 56.25em;
+    margin: 8px
 }
 
 div.viewport>p {
