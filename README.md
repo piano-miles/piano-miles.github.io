@@ -1,5 +1,5 @@
 # piano-miles.github.io
 
-This is just a fun little test. :)
+My site on GitHub. :)
 
 (<https://piano-miles.github.io/>)
