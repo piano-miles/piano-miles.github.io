@@ -22,8 +22,7 @@ header {
 .hero_header,
 .logo {
     color: #000;
-    text-align: center;
-    letter-spacing: 4px
+    text-align: center
 }
 
 .logo {
@@ -125,10 +124,17 @@ header {
 
 .cards {
     width: 100%;
+    max-width: 300px;
+    max-height: 300px;
     height: auto;
+    visibility: visible
+}
+
+.dummysquare {
+    padding: 5%;
     max-width: 400px;
-    max-height: 200px;
-    opacity: .8
+    max-height: 400px;
+    visibility: hidden
 }
 
 .container .footer {
@@ -136,7 +142,6 @@ header {
     padding-bottom: 20px;
     text-transform: uppercase;
     font-weight: lighter;
-    letter-spacing: 2px;
     border-top-width: 2px;
     background-color: #202327;
     border-radius: 6px
@@ -277,8 +282,6 @@ header {
 }
 
 .container .header h1 {
-    letter-spacing: 0;
-    word-spacing: 3px;
     box-shadow: none;
     font-size: 30px
 }
@@ -297,8 +300,6 @@ header {
 }
 
 .intro p {
-    word-spacing: 4px;
-    text-align: justify;
     font-weight: 400 !important;
     font-size: 18px
 }
