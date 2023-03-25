@@ -3,6 +3,7 @@ body {
     background-image: url(https://images.unsplash.com/photo-1657561756804-c4a894e36ce9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxhbGx8MTd8fHx8fHwyfHwxNjU3NTgwOTkx&ixlib=rb-1.2.1&q=80&w=2560);
     background-size: cover;
     font-family: "Roboto", sans-serif;
+    backdrop-filter:blur(2px);
     margin: 0
 }
 
