@@ -1,34 +1,45 @@
 @import url(https://themes.googleusercontent.com/fonts/css?kit=nJGywkaDzFzaEBjqqzYw8g);
 
 body {
-    font-family: "Inter";
-    padding: 64px;
+    font-family: "Inter"
+}
+
+main {
+    width: 80%;
+    padding-top: 32px;
+    margin: auto;
+    max-width: 960px
 }
 
 .pad {
-    margin: 32px;
+    margin: 32px
+}
+
+h1,
+p {
+    margin-top: 0
 }
 
 h1 {
     font-weight: 600;
-    font-size: 43px;
-    margin-top: 0px;
+    font-size: 43px
+}
+
+h2,
+h3 {
+    font-weight: 500;
+    margin-bottom: 8px
 }
 
 h2 {
-    font-weight: 500;
     font-size: 26px;
-    margin-bottom: 8px;
-    margin-top: 28px;
+    margin-top: 28px
 }
 
 h3 {
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 18px
 }
 
 p {
-    font-size: 14px;
-    margin-top: 0px;
+    font-size: 14px
 }
