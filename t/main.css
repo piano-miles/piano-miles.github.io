@@ -22,7 +22,8 @@ p {
 
 h1 {
     font-weight: 600;
-    font-size: 43px
+    letter-spacing: -1px;
+    font-size: 45px
 }
 
 h2,
@@ -33,13 +34,11 @@ h3 {
 
 h2 {
     font-size: 26px;
-    margin-top: 28px
-}
-
-h3 {
-    font-size: 18px
+    margin-top: 28px;
+    letter-spacing: -0.5px
 }
 
 p {
-    font-size: 14px
+    font-size: 14px;
+    line-height: 20px
 }
