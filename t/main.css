@@ -1,14 +1,14 @@
-@import url(https://themes.googleusercontent.com/fonts/css?kit=nJGywkaDzFzaEBjqqzYw8g);
+@import "https://themes.googleusercontent.com/fonts/css?kit=nJGywkaDzFzaEBjqqzYw8g";
 
 body {
     font-family: "Inter"
 }
 
 main {
-    width: 80%;
-    padding-top: 32px;
     margin: auto;
-    max-width: 960px
+    max-width: 960px;
+    padding-top: 32px;
+    width: 80%
 }
 
 .pad {
@@ -21,24 +21,92 @@ p {
 }
 
 h1 {
+    font-size: 45px;
     font-weight: 600;
-    letter-spacing: -1px;
-    font-size: 45px
+    letter-spacing: -1px
+}
+
+.th,
+h2,
+h3 {
+    font-weight: 500
 }
 
 h2,
 h3 {
-    font-weight: 500;
     margin-bottom: 8px
 }
 
 h2 {
     font-size: 26px;
-    margin-top: 28px;
-    letter-spacing: -0.5px
+    letter-spacing: -.5px;
+    margin-top: 28px
 }
 
 p {
-    font-size: 14px;
     line-height: 20px
+}
+
+table {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: none;
+    display: block;
+    margin-bottom: 64px;
+    margin-left: 24px;
+    margin-right: 24px;
+    overflow-x: auto;
+    width: 100%
+}
+
+a {
+    color: #021937;
+    transition-duration: 350ms
+}
+
+a:hover {
+    color: #aa11ad;
+    font-size: 15px
+}
+
+td,
+th {
+    text-align: left
+}
+
+a,
+p,
+td {
+    font-size: 14px
+}
+
+td {
+    letter-spacing: .1px;
+    padding: 6px 12px
+}
+
+tr {
+    border-bottom: 1px solid #a7a7a7;
+    transition-duration: 250ms
+}
+
+tr:hover {
+    background-color: #fffbe3
+}
+
+th {
+    padding: 4px
+}
+
+.th {
+    font-size: 18px
+}
+
+hr {
+    background: #b4b4b4;
+    border: 0;
+    height: 1.5px;
+    margin: 64px 0
 }
