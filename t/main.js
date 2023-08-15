@@ -18,19 +18,12 @@ For example, the URL for [Wavefunction Simulator](https://piano-miles.github.io/
 ## All shortened URLs
 `
 
-const guide = () => '<div class="pad">' + (new showdown.Converter).makeHtml(md) + "</div>";
+const guide = () =>
+    '<div class="pad">' + (new showdown.Converter).makeHtml(md) + "</div>";
 
-const getShortLink = () => {
-    let queryString = window.location.search
-    console.log(`queryString: ${queryString}`)
-    let queryParams = {}
-
-    return queryString &&
-        new URLSearchParams(queryString)
-            .forEach((value, key) => {
-                queryParams[key] = value
-            }), queryParams
-};
+const getShortLink = () =>
+    (query = window.location.search).length ?
+        query.substring(1).split("&") : [];
 
 const addDescription = () => {
     let main = document.createElement("main")
@@ -42,18 +35,22 @@ const addDescription = () => {
         header = table.createTHead(),
         row = header.insertRow(0),
         cell = row.insertCell(0);
+
     cell.innerHTML = `<p class="th">Short URL</p>`,
         (cell = row.insertCell(1))
             .innerHTML = `<p class="th">Full URL</h4>`;
 
     // Create table body
     let body = table.createTBody()
+
     for (let key in pairs) {
         cell = (row = body.insertRow())
             .insertCell(0);
+
         const shortlink = "https://piano-miles.github.io/t?" + key
         cell.innerHTML = `<a href=${shortlink}>${shortlink}</a>`,
             cell = row.insertCell(1);
+
         const biglink = pairs[key]
         cell.innerHTML = `<a href=${biglink}>${biglink}</a>`
     }
@@ -83,14 +80,14 @@ for (let i = 0; i < links.length; i++) {
     pairs[key] = "https://piano-miles.github.io/" + link
 }
 
-if ((params = getShortLink()).length > 0) { // If there are params
+if ((params = getShortLink()).length) { // If there are params
     if (params.length > 1) // If there are multiple params
-        for (let i = 1; i < params.length; i++)
-            params[i] in pairs &&
-                window.open(pairs[params[i]]); // Open each additional link after the first in a new tab
+        for (let i = 1; i < params.length; i++) // For each param after the first
+            pairs[params[i]] !== undefined && // If the link exists
+                window.open(pairs[params[i]], "_blank"); // Open in a new tab
 
-    params[0] in pairs ?
-        window.location.replace(pairs[params[0]]) :
-        addDescription(); // Redirect to the pimary link if it exists, otherwise add the description
+    pairs[params[0]] !== undefined ? // If the primary link exists
+        window.location.replace(pairs[params[0]], "_blank") :  // Redirect to the pimary link
+        addDescription(); // Otherwise add the description
 
 } else addDescription() // If there are no params, add the description
