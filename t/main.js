@@ -82,15 +82,15 @@ for (let i = 0; i < links.length; i++) {
 }
 
 if ((params = getShortLink()).length) {
-  if (params.length > 1) {
-    for (let i = 1; i < params.length; i++) // For each param after the first
-        pairs[params[i]] !== undefined && // If the link exists
-            window.open(pairs[params[i]], '_blank') // Open in a new tab
-  }
+    if (params.length > 1) {
+        for (let i = 1; i < params.length; i++) // For each param after the first
+            pairs[params[i]] !== undefined && // If the link exists
+                window.open(pairs[params[i]], '_blank') // Open in a new tab
+    }
 
-  pairs[params[0]] !== undefined // If the primary link exists
-      ? window.location.replace(pairs[params[0]], '_blank') // Redirect to the pimary link
-      : addDescription() // Otherwise add the description
+    pairs[params[0]] !== undefined // If the primary link exists
+        ? window.location.replace(pairs[params[0]], '_blank') // Redirect to the pimary link
+        : addDescription() // Otherwise add the description
 } else {
-  addDescription() // If there are no params, add the description
+    addDescription() // If there are no params, add the description
 }
