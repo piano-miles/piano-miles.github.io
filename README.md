@@ -2,4 +2,4 @@
 
 My site on GitHub. :)
 
-(<https://piano-miles.github.io/>)
+(<https://git.mileswaugh.com/>)
